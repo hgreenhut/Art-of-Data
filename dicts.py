@@ -28,10 +28,12 @@ for (k,v) in story.items():
 
 
 def count(x):
-    story = {}
+    dict = {}
     for i in x:
-        story[i] = len(i)
-    return story
+        dict[i] = x.count(i)
+    return dict
 
-print(count(["hello", "hello", "world", "hello"]))
+
+print(count([4,5,4,4]))
+
         
