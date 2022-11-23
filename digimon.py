@@ -16,6 +16,7 @@ Include details such as who you worked with, what methods you tried, what worked
  """
 
 import csv
+from itertools import count
 # Open file and cast to a list so it can be reused
 with open("datasets/digimon.csv", "r") as f:
     data = csv.DictReader(f)
@@ -71,6 +72,7 @@ def assemble_team(max_memory, min_attack):
 print(get_average_speed())
 
 print(count_digimon("Type", "Vaccine"))
+print(count_digimon("SP", "64"))
 
 print(assemble_team(15, 300))
 print(assemble_team(15, 400))
